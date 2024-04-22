@@ -5,19 +5,19 @@ import { defineConfig } from "vite";
 export default defineConfig({
   base: "./",
   plugins: [react()],
-  root: "./src/interface",
+  root: "./src/ui",
   publicDir: false,
   resolve: {
     alias: {
-      "@": path.resolve(__dirname, "./src/interface"),
+      "@": path.resolve(__dirname, "./src/ui"),
     },
   },
 
   build: {
-    outDir: "../../out/interface",
+    outDir: "../../out/ui",
     rollupOptions: {
       input: {
-        index: "src/interface/index.html", // Entry point for the main React app
+        index: "src/ui/index.html", // Entry point for the main React app
       },
       output: {
         entryFileNames: (_) => {
