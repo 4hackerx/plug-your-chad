@@ -23,7 +23,12 @@ const config: HardhatUserConfig = {
       chainId: 128123,
       accounts: [`${process.env.PRIVATE_KEY}`],
     },
-  }
+    sphinx: {
+      url: "https://sphinx.shardeum.org/",
+      chainId: 8082,
+      accounts: [`${process.env.PRIVATE_KEY}`],
+    }
+  } 
 };
 
 export default config;
