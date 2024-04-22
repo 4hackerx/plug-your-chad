@@ -20,7 +20,7 @@ contract TokenStreamer is Ownable, ReentrancyGuard {
     }
 
     uint256 constant USDC_DECIMALS = 1000000;
-    //uint256 constant MIN_STREAM_RATE
+
     mapping(uint256 => Stream) public streams;
     mapping(address => uint256[]) public userCreatedStreamIds;
     mapping(address => uint256[]) public receiverStreamIds;
@@ -51,7 +51,7 @@ contract TokenStreamer is Ownable, ReentrancyGuard {
     function createStream(
         address receiver,
         IERC20 token,
-        uint256 rate, //eth per month, convert into gwei/seconds
+        uint256 rate, //eth per month, convert into wei/seconds
         uint256 duration, //in seconds,
         uint256 totalAmountToStream
     ) external nonReentrant {
