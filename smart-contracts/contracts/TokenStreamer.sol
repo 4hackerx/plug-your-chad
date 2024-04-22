@@ -138,8 +138,9 @@ contract TokenStreamer is Ownable, ReentrancyGuard {
 
         if (block.timestamp >= stream.endTime) {
             return
-                (stream.rate * (stream.endTime - stream.startTime)) -
-                stream.withdrawnAmount;
+                stream.totalAmountToStream - stream.withdrawnAmount;
+                // (stream.rate * (stream.endTime - stream.startTime)) -
+                // stream.withdrawnAmount;
         } else {
             return
                 (stream.rate * (block.timestamp - stream.startTime)) -

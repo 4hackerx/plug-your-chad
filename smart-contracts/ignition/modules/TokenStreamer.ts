@@ -1,19 +1,21 @@
 import { buildModule } from "@nomicfoundation/hardhat-ignition/modules";
+import hre from "hardhat";
 
 const JAN_1ST_2030 = 1893456000;
 const ONE_GWEI: bigint = 1_000_000_000n;
 
-const TokenStreamerModule = buildModule("TokenStreamerModule", (m) => {
+
+const TokenStreamerModules = buildModule("TokenStreamerModule", (m) => {
   //const unlockTime = m.getParameter("unlockTime", JAN_1ST_2030);
   //const lockedAmount = m.getParameter("lockedAmount", ONE_GWEI);
-  const owner = ""
 
-  const tokenStreamer = m.contract("TokenStreamer", [owner]);
+
+  const tokenStreamer = m.contract("TokenStreamer", ["0x5e869af2Af006B538f9c6D231C31DE7cDB4153be"]);
 
   return { tokenStreamer };
 });
 
-export default TokenStreamerModule;
+export default TokenStreamerModules;
 
 
 

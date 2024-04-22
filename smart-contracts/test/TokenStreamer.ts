@@ -36,6 +36,7 @@ describe("TokenStreamer", function () {
 
         it("Should set the right owner", async function () {
             const { tokenStreamer, owner, otherAccount } = await loadFixture(deployTokenStreamerFixture);
+            console.log("owner:", owner.address)
 
             expect(await tokenStreamer.owner()).to.equal(owner.address);
         });
@@ -48,7 +49,12 @@ describe("TokenStreamer", function () {
             const { tokenStreamer, owner, otherAccount, mockUsdc } = await loadFixture(deployTokenStreamerFixture);
             const ONE_MONTH_IN_SECS = 30 * 24 * 60 * 60;
             const totalAmountToStream = 30 * 1000000;
+            const totalAmountToStream2 = 1000 * 1000000;
             const rate = Math.ceil(totalAmountToStream / ONE_MONTH_IN_SECS);
+            const rate2 = Math.ceil(totalAmountToStream2 / ONE_MONTH_IN_SECS);
+
+            console.log("rate2: ", rate2)
+            
 
             // const calculatedAmount = rate * ONE_MONTH_IN_SECS
             // const remainingAmount = totalAmountToStream - calculatedAmount
