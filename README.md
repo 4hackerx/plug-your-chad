@@ -9,3 +9,6 @@ But coding with AI isn't just a solo gig. PYC also has a LLaMa Party feature, wh
 PYC is all about making coding with AI easy, fun, and accessible to everyone. Whether you're a coding pro or just starting out, PYC has got your back. It's not about fancy jargon or complicated setups - it's about getting stuff done and enjoying the process.
 
 So if you want to take your coding to the next level with AI, give PYC a shot. It might just change the way you code forever.
+
+Presentation: https://figma.fun/7EiQ81
+Demo Video: https://vimeo.com/937550137
