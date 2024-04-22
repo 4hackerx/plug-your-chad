@@ -10,7 +10,7 @@ export default defineConfig({
       formats: ["cjs"],
     },
     rollupOptions: {
-      external: ["vscode", "path", "fs"],
+      external: ["vscode", "path", "fs", "http"],
       input: {
         extension: "src/extension/index.ts", // Entry point for the extension script
       },
