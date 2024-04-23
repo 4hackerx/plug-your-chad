@@ -27,6 +27,12 @@ const config: HardhatUserConfig = {
       url: "https://sphinx.shardeum.org/",
       chainId: 8082,
       accounts: [`${process.env.PRIVATE_KEY}`],
+    },
+    warlockfringe: {
+      url: "https://warlockfringe-rpc.eu-north-2.gateway.fm",
+      chainId: 1580691773,
+      accounts: [`${process.env.PRIVATE_KEY}`],
+      
     }
   } 
 };
