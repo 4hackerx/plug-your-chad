@@ -13,8 +13,10 @@ So if you want to take your coding to the next level with AI, give PYC a shot. I
 Presentation: https://figma.fun/7EiQ81
 Demo Video: https://vimeo.com/937550137
 
-The Token Streamer contract was deployed on Shardeum Sphinx Testnet and Etherlink Testnet chains
+The Token Streamer contract was deployed on Shardeum Sphinx Testnet, Etherlink Testnet, and on our own Gateway.fm rollup (warlockfringe).
 
 Shardeum Sphinx Deployment - [View on Sphinx](https://explorer-sphinx.shardeum.org/account/0x9e1ef5a92c9bf97460cd00c0105979153ea45b27)
 
 Etherlink Deployment - [View on Etherlink](https://testnet-explorer.etherlink.com/address/0x6D919b8dC30BEf41b56Aa8b18b2052c9459F8E9A)
+
+Gateway.fm Rollup (Warlockfringe) Deployment - [View on Warlockfringe](https://warlockfringe-blockscout.eu-north-2.gateway.fm/address/0x9E1eF5A92C9Bf97460Cd00C0105979153EA45b27)
