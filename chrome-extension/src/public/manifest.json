@@ -1,0 +1,25 @@
+{
+  "name": "Plug Your Chad",
+  "manifest_version": 2,
+  "description": "This project makes coding with AI a breeze",
+  "version": "1.0",
+
+  "action": {
+    "default_popup": "/interface/index.html",
+    "default_title": "kadak"
+  },
+
+  "background": {
+    "page": "background.html",
+    "persistent": true
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "js": ["contentscript.js"],
+      "all_frames": true
+    }
+  ],
+  "permissions": ["*://*/*", "webRequest", "webRequestBlocking"]
+}
