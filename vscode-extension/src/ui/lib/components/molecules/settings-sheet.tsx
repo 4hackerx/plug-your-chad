@@ -5,7 +5,7 @@ import {
   SheetHeader,
   SheetTitle,
   SheetTrigger,
-} from "@/components/ui/sheet";
+} from "@/lib/components/ui/sheet";
 
 const SettingsSheet = () => {
   return (
